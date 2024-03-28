@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:importantForAccessibility="no" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        tools:ignore="Autofill" />
+
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailET"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/forgetPasswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:layout_below="@id/passwordET"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_below="@id/forgetPasswordTV"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:id="@+id/goToSignupTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account_register_here"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_below="@id/loginBtn"
+        android:textColor="#090909"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
