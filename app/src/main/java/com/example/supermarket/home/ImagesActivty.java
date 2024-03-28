@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import com.example.supermarket.R;
 import com.example.supermarket.databinding.ActivityImagesBinding;
+import com.example.supermarket.home.Adapters.ImageAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +28,7 @@ public class ImagesActivty extends AppCompatActivity {
         imagesList.add(R.drawable.img2);
         imagesList.add(R.drawable.img3);
         imagesList.add(R.drawable.img4);
-
+        imagesList.add(R.drawable.img5);
         ImageAdapter imageAdapter = new ImageAdapter(imagesList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(imageAdapter);

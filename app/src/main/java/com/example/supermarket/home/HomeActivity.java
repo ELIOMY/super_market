@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.supermarket.R;
 import com.example.supermarket.databinding.ActivityHomeBinding;
+import com.example.supermarket.home.Adapters.ImageAdapter;
+import com.example.supermarket.home.Adapters.ImagePagerAdapter;
 
 import android.view.View;
 import android.widget.TextView;
@@ -43,13 +45,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         imagesList.add(R.drawable.img2);
         imagesList.add(R.drawable.img3);
         imagesList.add(R.drawable.img4);
+        imagesList.add(R.drawable.img5);
 
         ImagePagerAdapter pagerAdapter = new ImagePagerAdapter(imagesList);
         viewPager.setAdapter(pagerAdapter);
 
         ImageAdapter imageAdapter = new ImageAdapter(imagesList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        recyclerView.setAdapter(imageAdapter);    }
+        recyclerView.setAdapter(imageAdapter);
+    }
 
     @Override
     public void onClick(View v) {
